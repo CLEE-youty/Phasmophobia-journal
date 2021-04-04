@@ -1,10 +1,10 @@
-import Document, {Html, Head, Main, NextScript} from 'next/document';
-import {ServerStyleSheet} from 'styled-components';
+import Document, {Html, Head, Main, NextScript} from 'next/document'
+import {ServerStyleSheet} from 'styled-components'
 
 type Props = {
-  styleTags: any;
-};
-console.log(Head)
+  styleTags: any
+}
+
 export default class MyDocument extends Document<Props> {
   static getInitialProps({renderPage}) {
     const sheet = new ServerStyleSheet();

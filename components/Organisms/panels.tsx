@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { SELECT_PANEL } from '../Molecules/panel'
 
 interface EvidenceText {
-  evidence: Array<string>;
+  evidence: Array<string>
 }
 
 export const SELECT_PANELS = ({ evidence }: EvidenceText) => {

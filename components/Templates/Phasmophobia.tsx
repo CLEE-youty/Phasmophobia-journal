@@ -6,7 +6,7 @@ import { brandColor } from '@/const/color'
 import { SP_WIDTH } from '@/const/breakpoint'
 
 interface EvidenceText {
-  evidence: Array<string>;
+  evidence: Array<string>
 }
 
 export const PHASMOPHOBIA = ({ evidence }: EvidenceText) => {
