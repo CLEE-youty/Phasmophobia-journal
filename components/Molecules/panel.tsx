@@ -3,16 +3,19 @@ import styled from 'styled-components'
 import { LeftButton, RightButton } from '../Atoms/button'
 import { TEXT_BOX } from '../Atoms/textBox'
 
-interface EvidenceText {
+interface Lists {
   evidence: Array<string>
 }
 
-export const SELECT_PANEL = ({ evidence }: EvidenceText) => {
+const click = (e) => {
+}
+
+export const SELECT_PANEL = ({ evidence }: Lists) => {
   return (
     <Wrapper>
-      <LEFT_BUTTON_STYLED />
-      <TEXT_BOX evidence={evidence}/>
-      <RIGHT_BUTTON_STYLED />
+      <LEFT_BUTTON_STYLED onClick={click} />
+      <TEXT_BOX list={evidence}/>
+      <RIGHT_BUTTON_STYLED onClick={click} />
     </Wrapper>
   )
 }

@@ -2,11 +2,11 @@
 import styled from 'styled-components'
 import { SELECT_PANEL } from '../Molecules/panel'
 
-interface EvidenceText {
+interface Lists {
   evidence: Array<string>
 }
 
-export const SELECT_PANELS = ({ evidence }: EvidenceText) => {
+export const SELECT_PANELS = ({ evidence }: Lists) => {
   return (
     <Wrapper>
       <SELECT_PANEL evidence={evidence} />

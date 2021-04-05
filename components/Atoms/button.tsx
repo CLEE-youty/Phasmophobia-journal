@@ -7,17 +7,17 @@ const arrowRightImg = 'static/img/arrow-right.svg'
 export const LEFT_BUTTON = () => <LeftButton />
 export const RIGHT_BUTTON = () => <RightButton />
 
-const Button = styled.button`
+const BUTTON = styled.button`
   display: inline-block;
   background-color: black;
   height: 20px;
   width: 20px;
 `
 
-export const LeftButton = styled(Button)`
+export const LeftButton = styled(BUTTON)`
   background: url(${arrowLeftImg});
 `
 
-export const RightButton = styled(Button)`
+export const RightButton = styled(BUTTON)`
   background: url(${arrowRightImg});
 `
